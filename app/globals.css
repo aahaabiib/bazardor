@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@theme{--color-brand:#07873e;--color-up:#d92d2d;--color-down:#0f9d58}
+body{background:#f1f5f0;color:#14211a;font-family:var(--font-hind),sans-serif}
+.card{background:#fcfdfb;border:1px solid #e3e9e1;border-radius:18px}
+header{background:#fcfdfb!important;border-bottom:1px solid #e3e9e1}
+@keyframes mq{to{transform:translateX(-50%)}}
+.mq{display:flex;width:max-content;animation:mq 60s linear infinite}
+.mq:hover{animation-play-state:paused}
