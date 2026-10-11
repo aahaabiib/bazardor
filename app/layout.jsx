@@ -11,6 +11,7 @@ const f = Hind_Siliguri({
 export const metadata = {
   title: "বাজার দর",
   description: "প্রয়োজনীয় পণ্যের দাম এক নজরে।",
+  icons: { icon: "/logo.jpg" },
 };
 export default function L({ children }) {
   return (

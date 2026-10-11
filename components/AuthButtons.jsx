@@ -37,7 +37,7 @@ export default function AuthButtons() {
     <div className="relative">
       <button
         onClick={() => setO(!o)}
-        className="flex items-center gap-2 text-sm"
+        className="flex items-center gap-2 text-sm cursor-pointer"
       >
         {u.image ? (
           <Image
@@ -45,7 +45,7 @@ export default function AuthButtons() {
             alt=""
             width={36}
             height={36}
-            className="rounded-lg"
+            className="rounded-lg" 
           />
         ) : (
           <span className="w-9 h-9 rounded-lg bg-brand text-white grid place-items-center">
@@ -55,17 +55,17 @@ export default function AuthButtons() {
         <span>{u.name?.split(" ")[0]} ▾</span>
       </button>
       {o && (
-        <div className="absolute right-0 mt-2 w-64 card p-4 shadow-lg z-20">
+        <div className="absolute right-0 mt-2 w-64 card p-4 shadow-lg z-20 text-center">
           <b className="block">{u.name}</b>
           <small className="text-gray-500">{u.email}</small>
           <Link
             href="/profile"
             onClick={() => setO(false)}
-            className="block mt-3 text-sm"
+            className="block mt-3 text-sm hover:bg-gray-100 px-2 py-1 rounded"
           >
             👤 আমার প্রোফাইল
           </Link>
-          <button onClick={out} className="mt-3 text-sm text-red-600">
+          <button onClick={out} className="mt-3 text-sm text-red-600 hover:bg-gray-200 w-full px-2 py-1 rounded cursor-pointer">
             ↩ সাইন আউট
           </button>
         </div>

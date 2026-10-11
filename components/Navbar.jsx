@@ -18,11 +18,11 @@ export default async function Navbar() {
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex gap-3 items-center">
           <Image
-            src="/logo-icon.png"
+            src="/logo-icon.jpg"
             alt=""
             width={40}
             height={40}
-            className="rounded-xl bg-green-700 p-1"
+            className="rounded-xl border-3 border-brand p-1"
           />
           <div>
             <b className="text-lg leading-none block">বাজার দর</b>

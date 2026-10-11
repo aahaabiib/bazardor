@@ -95,7 +95,7 @@ export default function AuthForm({ up }) {
         )}
         <button
           disabled={b}
-          className="w-full py-2.5 rounded-lg bg-brand text-white font-semibold shadow disabled:opacity-60"
+          className="w-full py-2.5 rounded-lg bg-brand text-white font-semibold shadow disabled:opacity-60 cursor-pointer"
         >
           {b ? "অপেক্ষা করুন..." : up ? "অ্যাকাউন্ট তৈরি করুন" : "সাইন ইন"}
         </button>
@@ -104,14 +104,14 @@ export default function AuthForm({ up }) {
           <button
             type="button"
             onClick={() => soc("google")}
-            className="border border-gray-300 rounded-lg py-2 text-sm font-semibold bg-white"
+            className="border border-gray-300 rounded-lg py-2 text-sm font-semibold bg-white hover:bg-gray-100 cursor-pointer"
           >
             Google দিয়ে চালিয়ে যান
           </button>
           <button
             type="button"
             onClick={() => soc("github")}
-            className="border border-gray-300 rounded-lg py-2 text-sm font-semibold bg-white"
+            className="border border-gray-300 rounded-lg py-2 text-sm font-semibold bg-white hover:bg-gray-100 cursor-pointer"
           >
             GitHub দিয়ে চালিয়ে যান
           </button>
